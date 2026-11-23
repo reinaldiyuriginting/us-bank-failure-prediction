@@ -1,8 +1,8 @@
 # Predicting U.S. Commercial Bank Failure
 
-Can publicly available financial and economic data help prioritise banks for review before failure? This project compares **Logistic Regression, Random Forest and XGBoost** using chronological validation and a later historical test.
+Can publicly available financial and economic data help prioritise banks for review before failure? This project compares Logistic Regression, Random Forest and XGBoost using chronological validation and a later historical test.
 
-The research was completed for an MSc Business Analytics dissertation at The University of Manchester by Yuri Ginting. It brings together financial risk, rare-event modelling and practical limits on review capacity.
+The research was completed for an MSc Business Analytics dissertation at The University of Manchester by Reinaldi Yuri Artha. It brings together financial risk, rare-event modelling and practical limits on review capacity.
 
 ![Final-test precision–recall comparison](figures/final_test_pr_auc.png)
 
@@ -10,11 +10,11 @@ The research was completed for an MSc Business Analytics dissertation at The Uni
 
 ## What the research found
 
-- **Validation:** Random Forest with bank and macroeconomic predictors had the highest mean validation PR-AUC, **0.343**, and was selected before the Version 2 final test.
-- **Later test:** Logistic Regression with macroeconomic predictors had the highest PR-AUC point estimate (**0.128**); the selected Random Forest scored **0.072**. Confidence intervals were wide and overlapped, so these results do not establish a statistically distinct winner.
-- **Review capacity:** When the top 1% of banks were ranked each quarter, both Random Forest specifications and bank-only XGBoost captured **7 of the 13 distinct failed banks** at least once in a positive pre-failure quarter.
+- Validation: Random Forest with bank and macroeconomic predictors had the highest mean validation PR-AUC, 0.343, and was selected before the final test.
+- Later test: Logistic Regression with macroeconomic predictors had the highest PR-AUC point estimate (0.128); the selected Random Forest scored 0.072. Confidence intervals were wide and overlapped, so these results do not establish a statistically distinct winner.
+- Review capacity: When the top 1% of banks were ranked each quarter, both Random Forest specifications and bank-only XGBoost captured 7 of the 13 distinct failed banks at least once in a positive pre-failure quarter.
 
-The final test covers **2020 Q1–2025 Q2**, with **92,229 bank-quarter observations**, **40 positive bank-quarters** and **13 distinct failed banks**. Findings are historical and uncertain; the small number of failures limits generalisation. Precision–recall AUC is a measure of the precision–recall trade-off across score thresholds and depends on event prevalence.
+The final test covers 2020 Q1–2025 Q2, with 92,229 bank-quarter observations, 40 positive bank-quarters and 13 distinct failed banks. Findings are historical and uncertain; the small number of failures limits generalisation. Precision–recall AUC is a measure of the precision–recall trade-off across score thresholds and depends on event prevalence.
 
 ## Data and methodology
 
@@ -26,7 +26,7 @@ The final test covers **2020 Q1–2025 Q2**, with **92,229 bank-quarter observat
 | Validation | Three purged expanding-window folds: 2010–2012, 2013–2015 and 2016–2018. A 2019 purge precedes the 2020–2025 final test. |
 | Preprocessing | Training-fold median imputation and 1st/99th-percentile winsorisation; Logistic Regression is also standardised. Class weights address imbalance. |
 
-The selected model was determined by the unweighted mean of the three validation PR-AUC values. The same final-test calendar had been examined under an earlier project version; the Version 2 design and selection procedure were fixed before Version 2 evaluation.
+The selected model was determined by the unweighted mean of the three validation PR-AUC values. The same final-test calendar had been examined under an earlier project version; the research design and selection procedure were fixed before this evaluation.
 
 ## Explore the project
 
@@ -46,11 +46,11 @@ With Python and Matplotlib installed, run:
 python scripts/plot_final_test.py
 ```
 
-The script reads the included final-test results CSV and writes `figures/final_test_pr_auc.png`. **It visualises saved results; it does not train models or reproduce predictions.** This example was tested in the preparation environment; package versions have not been locked.
+The script reads the included final-test results CSV and writes `figures/final_test_pr_auc.png`. It visualises saved results; it does not train models or reproduce predictions. This example was tested in the preparation environment; package versions have not been locked.
 
 ### Research notebook status
 
-The cleaned code cells were compared with the supplied originals using Python syntax trees; changes are limited to comments and review messages. The full research workflow was originally run in Google Colab with a specific Google Drive folder structure. The notebooks still contain those original path and configuration assumptions; some Phase 1 and Phase 2 handoffs use different filenames. Raw data and intermediate outputs are not included. The full pipeline **has not been independently rerun from this repository**. See the dependency and reproducibility notes before attempting a full run.
+The code cells were checked against the supplied originals; headings and review messages were simplified without changing the analysis logic. The full research workflow was originally run in Google Colab with a specific Google Drive folder structure. The notebooks still contain those original path and configuration assumptions; some Phase 1 and Phase 2 handoffs use different filenames. Raw data and intermediate outputs are not included. The full pipeline has not been independently rerun from this repository. See the dependency and reproducibility notes before attempting a full run.
 
 ## Limitations and responsible interpretation
 
