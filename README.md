@@ -32,7 +32,7 @@ The selected model was determined by the unweighted mean of the three validation
 
 | Location | What it contains |
 | --- | --- |
-| [`notebooks/`](notebooks/) | The 17 research notebooks, organised from data audit through final evaluation. Code-cell headings and review messages have been cleaned, and saved outputs cleared; the analysis logic has been preserved. |
+| [`notebooks/`](notebooks/) | The 17 research notebooks, organised from data audit through final evaluation. |
 | [`results/`](results/) | Original aggregate final-test CSVs and simplified tables checked against the submitted dissertation. |
 | [`scripts/plot_final_test.py`](scripts/plot_final_test.py) | A small example that recreates the figure above from the included aggregate results. |
 | [`docs/NOTEBOOK_DEPENDENCIES.md`](docs/NOTEBOOK_DEPENDENCIES.md) | A map of notebook inputs, handoffs and known compatibility questions. |
