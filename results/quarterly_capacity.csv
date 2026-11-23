@@ -1,0 +1,8 @@
+model,predictor_set,captured_1pct,captured_5pct,captured_10pct,captured_20pct,precision_1pct_percent
+Logistic Regression,bank only,6,8,9,10,1.5
+Logistic Regression,bank + macro,6,8,9,11,1.5
+Random Forest,bank only,7,7,9,11,1.71
+Random Forest,bank + macro,7,8,9,10,1.5
+XGBoost,bank only,7,8,9,9,1.82
+XGBoost,bank + macro,6,8,9,10,1.5
+Low-equity baseline,bank only,3,8,10,11,0.75

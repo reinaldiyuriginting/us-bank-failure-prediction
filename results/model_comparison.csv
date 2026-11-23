@@ -1,0 +1,7 @@
+model,predictor_set,mean_validation_pr_auc,final_test_pr_auc
+Logistic Regression,bank only,0.197405,0.093154
+Logistic Regression,bank + macro,0.204432,0.127668
+Random Forest,bank only,0.318148,0.066872
+Random Forest,bank + macro,0.342672,0.071752
+XGBoost,bank only,0.317152,0.057216
+XGBoost,bank + macro,0.319598,0.086564

@@ -1,0 +1,5 @@
+# Historical results
+
+`v2_final_test_discrimination_with_clustered_ci.csv` and `v2_final_test_capacity_with_clustered_ci.csv` are the original Notebook 16 aggregate outputs supplied by the author. The final test covers 2020 Q1–2025 Q2 and includes 92,229 bank-quarters, 40 positive quarters and 13 distinct failed banks. Uncertainty intervals are based on 1,000 audited-CERT-clustered bootstrap replicates; capacity intervals keep observed ranking memberships fixed.
+
+`model_comparison.csv` and `quarterly_capacity.csv` are simplified tables transcribed from dissertation Tables 4.2 and 4.3. Their final-test values have been checked against the two original output files, allowing for dissertation rounding; the validation means come from Table 4.2. Capacity counts capture distinct failed banks at least once in a positive pre-failure quarter, out of 13. Rankings are formed separately each quarter; precision uses flagged bank-quarters and is not a bank-level capture rate. Results have not been independently regenerated.
