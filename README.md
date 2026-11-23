@@ -50,7 +50,7 @@ The script reads the included final-test results CSV and writes `figures/final_t
 
 ### Research notebook status
 
-The code cells were checked against the supplied originals; headings and review messages were simplified without changing the analysis logic. The full research workflow was originally run in Google Colab with a specific Google Drive folder structure. The notebooks still contain those original path and configuration assumptions; some Phase 1 and Phase 2 handoffs use different filenames. Raw data and intermediate outputs are not included. The full pipeline has not been independently rerun from this repository. See the dependency and reproducibility notes before attempting a full run.
+The code cells were checked against the supplied originals; headings and review messages were simplified without changing the analysis logic. The full research workflow was originally run in Google Colab with a specific Google Drive folder structure. The notebooks contain the original analysis and were run in Google Colab using a specific Google Drive folder structure. Raw data and intermediate outputs are not included. The full pipeline has not been independently rerun from this repository. See the dependency and reproducibility notes before attempting a full run.
 
 ## Limitations and responsible interpretation
 
@@ -67,7 +67,3 @@ The code cells were checked against the supplied originals; headings and review 
 - [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/)
 
 Raw data snapshots, exact retrieval details and source terms should be checked before attempting full reproduction. No raw bank-level dataset or dissertation PDF is included here. Project licence and third-party sharing permissions remain to be confirmed.
-
-## Related work
-
-The Medium article and Power BI dashboard are in preparation; links will be added when they are available.
