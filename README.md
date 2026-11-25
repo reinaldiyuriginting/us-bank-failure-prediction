@@ -32,8 +32,8 @@ The selected model was determined by the unweighted mean of the three validation
 
 | Location | What it contains |
 | --- | --- |
-| [Interactive dashboard] https://datastudio.google.com/s/psEShVYjg00 | Explore historical bank failures and compare model performance. |
-| [Medium article] https://medium.com/@reinaldi.yuriginting/can-machine-learning-help-predict-bank-failures-f2333c519865 | Read the story, findings and lessons from the dissertation. |
+| [Interactive dashboard](https://datastudio.google.com/s/psEShVYjg00) | Explore historical bank failures and compare model performance. |
+| [Medium article](https://medium.com/@reinaldi.yuriginting/can-machine-learning-help-predict-bank-failures-f2333c519865) | Read the story, findings and lessons from the dissertation. |
 | [`notebooks/`](notebooks/) | The 17 research notebooks, organised from data audit through final evaluation. |
 | [`results/`](results/) | Original aggregate final-test CSVs and simplified tables checked against the submitted dissertation. |
 | [`scripts/plot_final_test.py`](scripts/plot_final_test.py) | A small example that recreates the figure above from the included aggregate results. |
