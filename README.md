@@ -2,8 +2,6 @@
 
 Can publicly available financial and economic data help prioritise banks for review before failure? This project compares Logistic Regression, Random Forest and XGBoost using chronological validation and a later historical test.
 
-The research was completed for an MSc Business Analytics dissertation at The University of Manchester by Reinaldi Yuri Artha. It brings together financial risk, rare-event modelling and practical limits on review capacity.
-
 ![Final-test precision–recall comparison](figures/final_test_pr_auc.png)
 
 *Figure: Historical final-test precision–recall AUC (PR-AUC), with 95% bank-clustered bootstrap intervals. The highlighted Random Forest was selected during validation. The chart uses the original aggregate results supplied with the project.*
